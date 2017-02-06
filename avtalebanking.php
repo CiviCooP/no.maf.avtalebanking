@@ -2,6 +2,17 @@
 
 require_once 'avtalebanking.civix.php';
 
+function avtalebanking_civicrm_tabs( &$tabs, $contactID ) {
+  $count_query = CRM_Core_DAO::executeQuery("SELECT COUNT(id) AS total FROM civicrm_bank_account WHERE contact_id=$contactID;");
+  $count_query->fetch();
+  array_push($tabs, array(
+    'id' =>       'avtalegiro',
+    'url' =>      CRM_Utils_System::url('civicrm/banking/avtalegiro_tab', "snippet=1&amp;cid=$contactID"),
+    'title' =>    ts("Avtale Giro"),
+    'weight' =>   95,
+    'count' =>    $count_query->total));
+}
+
 /**
  * Implements hook_civicrm_config().
  *

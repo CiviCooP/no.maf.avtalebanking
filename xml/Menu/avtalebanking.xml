@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <path>civicrm/banking/avtalegiro_tab</path>
+    <page_callback>CRM_Avtalebanking_Page_AvtaleGiroTab</page_callback>
+    <title>AvtaleGiroTab</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
+  <item>
+    <path>civicrm/banking/avtalegiro_form</path>
+    <page_callback>CRM_Avtalebanking_Form_AvtaleGiro</page_callback>
+    <title>AvtaleGiro</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
+</menu>
