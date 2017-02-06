@@ -7,7 +7,7 @@
                     <div>{ts}Bank Account{/ts}</div>
                 </th>
                 <th>
-                    <div>{ts}Notification to bank{/ts}</div>
+                    <div>{ts}Notification{/ts}</div>
                 </th>
                 <th>
                     <div>{ts}Maximum amount{/ts}</div>
@@ -38,9 +38,9 @@
                     </td>
                     <td>
                         {if ($account.notification_to_bank)}
-                            {ts}Send notification to bank{/ts}
+                            {ts}Send notification{/ts}
                         {else}
-                            {ts}Do not send notification to bank{/ts}
+                            {ts}Do not send notification{/ts}
                         {/if}
                     </td>
                     <td>

@@ -49,7 +49,7 @@ class CRM_Avtalebanking_Form_AvtaleGiro extends CRM_Core_Form {
     $this->add(
       'select', // field type
       'notification_to_bank', // field name
-      ts('Send notification to bank'), // field label
+      ts('Send notification'), // field label
       array(0=>ts('No'), 1=>ts('Yes')), // list of options
       TRUE // is required
     );

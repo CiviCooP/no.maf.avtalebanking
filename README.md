@@ -1,11 +1,14 @@
 # no.maf.avtalebanking
 
-Customisations to CiviBanking to store Avtale Giro information. That information
-consist of maximum amount and whether the donor wants to receive notification.
+Customisations to CiviBanking to store Avtale Giro information.
+The avtale giro information consist of the following:
 
-The extension will add a new Tab on the contact summary that tab will show
-the bank account number and the AvtaleGiro information with functionality to
-add.
+- Maximum amount
+- Send notification
+
+The extension will add a new tab on the contact summary. That tab will show
+the bank account number and the Avtale Giro information with functionality to update that information.
+
 
 ## Explanation of design choices
 
